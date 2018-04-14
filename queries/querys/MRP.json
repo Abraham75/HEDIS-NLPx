@@ -1,0 +1,40 @@
+{
+  "_source": {
+        "includes": [ "filename" ]
+    },
+  "query": {
+    "bool":{
+    "should":[     
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "Medication reconciliation",
+                      "slop":1}
+      }},
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "Discharge date",
+                      "slop":1}
+      }},
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "Discharge medications",
+                      "slop":1}
+      }},
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "Current medications",
+                      "slop":1}
+      }},
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "No changes in medications",
+                      "slop":1}
+      }}
+
+      ],
+      "minimum_should_match":1
+    }
+    
+  }
+  
+}

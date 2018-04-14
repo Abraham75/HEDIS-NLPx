@@ -1,0 +1,29 @@
+uid,QueryID,MustTerm,ShouldTerm,slop,Instructions,Measure,Type (Include/Exclude),Notes
+8,H8,Allograft bypass of coronary artery,,3,1,CDC,E,CABG Exclusion
+9,H9,Allograft replacement coronary artery ,,3,1,CDC,E,CABG Exclusion
+10,H10,Aortocoronary bypass ,,2,1,CDC,E,CABG Exclusion
+11,H11,Coronary artery bypass,,2,1,CDC,E,CABG Exclusion
+12,H12,Aortocoronary vein graft,,3,1,CDC,E,CABG Exclusion
+13,H13,Coronary artery vein graft,,3,1,CDC,E,CABG Exclusion
+14,H14,bypass anastomosis,,2,1,CDC,E,CABG Exclusion
+15,H15,ACB graft,,0,1,CDC,E,CABG Exclusion
+16,H16,CABG,,0,1,CDC,E,CABG Exclusion
+17,H17,CAG,,0,1,CDC,E,CABG Exclusion
+18,H18,RACAG,,0,1,CDC,E,CABG Exclusion
+19,H19,ACSVBG,,0,1,CDC,E,CABG Exclusion
+20,H20,ACSVG,,0,1,CDC,E,CABG Exclusion
+21,H21,ACVG,,0,1,CDC,E,CABG Exclusion
+22,H22,CAVG,,0,1,CDC,E,CABG Exclusion
+23,H23,CVG,,0,1,CDC,E,CABG Exclusion
+24,H24,Allograft bypass of coronary arteries,,3,1,CDC,E,CABG Exclusion
+25,H25,Allograft replacement coronary arteries,,3,1,CDC,E,CABG Exclusion
+26,H26,Coronary arteries vein graft,,3,1,CDC,E,CABG Exclusion
+27,H27,Dilation Coronary Artery Percutaneous Approach,,4,1,CDC,E,Percutaneous Coronary Intervention Exclusion
+28,H28,coronary angioplasty,,4,1,CDC,E,Percutaneous Coronary Intervention Exclusion
+29,H29,stent coronary artery,,4,1,CDC,E,Percutaneous Coronary Intervention Exclusion
+30,H30,Percutaneous angioplasty of coronary artery,,4,1,CDC,E,Percutaneous Coronary Intervention Exclusion
+31,H31,Percutaneous transluminal coronary balloon angioplasty,,4,1,CDC,E,Percutaneous Coronary Intervention Exclusion
+32,H32,Percutaneous coronary intervention,,4,1,CDC,E,Percutaneous Coronary Intervention Exclusion
+33,H33,atherectomy coronary artery,,4,1,CDC,E,Percutaneous Coronary Intervention Exclusion
+34,H34,PTCA,,0,1,CDC,E,Percutaneous Coronary Intervention Exclusion
+35,H35,PCI,,0,1,CDC,E,Percutaneous Coronary Intervention Exclusion

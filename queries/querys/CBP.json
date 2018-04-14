@@ -1,0 +1,41 @@
+{
+  "_source": {
+        "includes": [ "filename" ]
+    },
+  "query": {
+    "bool":{
+    "should":[
+      {"match": {"doc" : "HTN"}},
+      {"match": {"doc" : "Hyperpiesia"}},
+      {"match": {"doc" : "Hyperpiesis"}},
+      {"match": {"doc" : "ESRD"}},
+      {"match": {"doc" : "hypertensive"}},
+	  {"match": {"doc" : "hypertension"}},
+
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "High Blood Pressure",
+                      "slop":1}
+      }},
+	  {"match_phrase": 
+            { "doc": 
+                      {"query" : "High BP",
+                      "slop":1}
+      }},
+	  {"match_phrase": 
+            { "doc": 
+                      {"query" : "Elevated Blood Pressure",
+                      "slop":1}
+      }},
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "Elevated BP",
+                      "slop":1}
+      }}
+		],
+      "minimum_should_match":1
+    }
+    
+  }
+  
+}
