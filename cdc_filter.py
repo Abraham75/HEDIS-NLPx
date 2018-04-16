@@ -104,4 +104,3 @@ def cdc_a1c9_MLP(searchTerm, highlight):
       return True
    else:
       return False
-  
