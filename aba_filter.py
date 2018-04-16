@@ -10,25 +10,22 @@ def aba_MLP(highlight):
     result = None
 
     
-    bmi, body_mass, kg_m2 = None, None, None
-    if not bmi:
-        for i in bmi_compile:
+
+    for i in bmi_compile:
             res = i.search(highlight)
             if res:
-                bmi = True
-                break
-    if not body_mass:
-        for i in body_mass_index_compile:
+                return True
+                
+    for i in body_mass_index_compile:
             res = i.search(highlight)
             if res:
-                body_mass = True
-                break
-    if not kg_m2:
-        for i in kg_m2_compile:
-            res = i.search(highlight)
-            if res:
-                kg_m2 = True
-                break
+                return True
+                
+    for i in kg_m2_compile:
+        res = i.search(highlight)
+        if res:
+            return True
+    return False
 	# if not ht:
 		# for i in ht_compile:
 			# res = i.search(line)
@@ -43,7 +40,4 @@ def aba_MLP(highlight):
 				# wt = True
 				# break
     	#if ht and wt and bmi:
-    if bmi or body_mass or kg_m2:  
-        result = True
-
-    return result
+    

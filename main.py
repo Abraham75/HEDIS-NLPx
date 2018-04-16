@@ -4,7 +4,7 @@ import os.path
 from config import JSON_DIRECTORY
 from config import QUERIES_DOCTYPE, CHART_DOCTYPE, HEDIS_INDEX_NAME
 from aba_filter import aba_MLP
-from cdc_filter import cdc_a1c_MLP
+import cdc_filter
 file_name = "sample.json"
 
 with open(os.path.join(JSON_DIRECTORY,file_name)) as json_file:
@@ -51,9 +51,17 @@ if len(res['hits']['hits']) > 0:
         highlight_string = json.dumps(hit['highlight'])
         highlight_string = highlight_string.split('~')[0][-100 :] + " " + hit['_source']['searchTerm'] + " " + highlight_string.split('~')[-1][:100]
         searchTerm = hit['_source']['searchTerm']
-        print("Search Term--> ",searchTerm)
+
 #        print("score--> ",hit['_score']," ","Search Term--> ",searchTerm)
 #        print(" Section--> ",hit['_source']['highlight']['fields'])
 #        check = aba_MLP(highlight_string)
 #        print("ABA check results--> ", check)
-        check = cdc_a1c7_MLP(searchTerm, highlight_string)
+        check = cdc_a1c_MLP(searchTerm, highlight_string)
+        
+        print ("check: ", check)
+        print("Search Term--> ",searchTerm)
+        print ("Highlight string: ", highlight_string)
+       
+        
+        check2 = cdc_a1c9_MLP(searchTerm, highlight_string)
+        print ("check2: ", check2)
