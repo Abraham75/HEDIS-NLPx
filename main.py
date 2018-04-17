@@ -46,22 +46,23 @@ percolator_query = {
 ES = elasticsearch.Elasticsearch(timeout=500)
 res = ES.search(index=HEDIS_INDEX_NAME, doc_type=QUERIES_DOCTYPE, body=percolator_query)
 #print(res)
+
+# Remove 
+# We need more information for terms like Hba1c7, etc.
+
+eligible=False
+
 if len(res['hits']['hits']) > 0:
     for hit in res['hits']['hits']:
         highlight_string = json.dumps(hit['highlight'])
         highlight_string = highlight_string.split('~')[0][-100 :] + " " + hit['_source']['searchTerm'] + " " + highlight_string.split('~')[-1][:100]
         searchTerm = hit['_source']['searchTerm']
-
-#        print("score--> ",hit['_score']," ","Search Term--> ",searchTerm)
-#        print(" Section--> ",hit['_source']['highlight']['fields'])
-#        check = aba_MLP(highlight_string)
-#        print("ABA check results--> ", check)
-        check = cdc_a1c_MLP(searchTerm, highlight_string)
+        # I want to search all the exclusions for the search term
+        # for each hit
+        #If one mandatory exclusion is in there, then 
         
-        print ("check: ", check)
-        print("Search Term--> ",searchTerm)
-        print ("Highlight string: ", highlight_string)
-       
         
-        check2 = cdc_a1c9_MLP(searchTerm, highlight_string)
-        print ("check2: ", check2)
+#       print("score--> ",hit['_score']," ","Search Term--> ",searchTerm)
+#       print(" Section--> ",hit['_source']['highlight']['fields'])
+#       check = aba_MLP(highlight_string)
+#       print("ABA check results--> ", check)

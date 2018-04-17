@@ -29,5 +29,3 @@ def main():
     print('end', datetime.now())
 
 main()
-
-
