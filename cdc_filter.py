@@ -5,6 +5,10 @@ Created on Mon Dec 18 12:37:01 2017
 @author: brian
 """
 
+# put asterisks for the eye exam and nepropathy
+# we either need search terms for blood pressure (Hg)
+# or we just need to label it as what it is
+
 import re
 
 def cdc_a1c_MLP(searchTerm, highlight):

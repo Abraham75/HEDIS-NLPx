@@ -47,6 +47,8 @@ ES = elasticsearch.Elasticsearch(timeout=500)
 res = ES.search(index=HEDIS_INDEX_NAME, doc_type=QUERIES_DOCTYPE, body=percolator_query)
 #print(res)
 
+
+
 # Remove 
 # We need more information for terms like Hba1c7, etc.
 
