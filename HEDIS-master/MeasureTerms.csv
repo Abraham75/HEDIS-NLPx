@@ -1,0 +1,11 @@
+uid,QueryID,MustTerm,ShouldTerm,slop,Instructions,Measure,SubMeasure,Type (Include/Exclude),Notes
+1,H1,A1c,,0,"1,2,3",CDC,CDC_A1C7,Include,
+2,H2,HbA1c,,0,"1,2,3",CDC,CDC_A1C7,Include,
+3,H3,HgbA1c,,0,"1,2,3",CDC,CDC_A1C7,Include,
+4,H4,Hemoglobin A1c,,0,"1,2,3",CDC,CDC_A1C7,Include,
+5,H5,Glycohemoglobin,,0,"1,2,3",CDC,CDC_A1C7,Include,
+6,H6,Glycated hemoglobin,,0,"1,2,3",CDC,CDC_A1C7,Include,
+7,H7,Glycosylated hemoglobin,,0,"1,2,3",CDC,CDC_A1C7,Include,
+8,H8,BMI,,0,"1,2,3",ABA,ABA,Include,
+9,H9,kg/m2,,0,"1,2,3",ABA,ABA,Include,
+10,H10,Body Mass Index,,1,"1,2,3",ABA,ABA,Include,

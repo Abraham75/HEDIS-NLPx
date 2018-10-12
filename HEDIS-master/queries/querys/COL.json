@@ -1,0 +1,46 @@
+{
+  "_source": {
+        "includes": [ "filename" ]
+    },
+  "query": {
+    "bool":{
+    "should":[
+      {"match": {"doc" : "Colonoscopy"}},
+      {"match": {"doc" : "Cologuard"}},
+      {"match": {"doc" : "FOBT"}},
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "Flexible Sigmoidoscopy",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "CT Colonography",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Colorectal cancer",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Colon cancercolectomy",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Total colectomy",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "FIT DNA",
+                      "slop":1}
+            }}
+      ],
+      "minimum_should_match":1
+    }
+    
+  }
+}

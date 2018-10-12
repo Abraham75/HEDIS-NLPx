@@ -1,0 +1,71 @@
+{
+  "_source": {
+        "includes": [ "filename" ]
+    },
+  "query": {
+    "bool":{
+    "should":[
+      {"match": {"doc" : "A1c"}},
+      {"match": {"doc" : "ACE"}},
+      {"match": {"doc" : "ARB"}},
+      {"match": {"doc" : "Nephrologist"}},
+      {"match": {"doc" : "ESRD"}},
+	  {"match": {"doc" : "BUN"}},
+	  {"match": {"doc" : "HBA1c"}},
+	  {"match": {"doc" : "Hemoglobin"}},
+	  {"match": {"doc" : "albumin"}},
+	  {"match": {"doc" : "Microalbumin"}},
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "Retinal eye exam",
+                      "slop":1}
+            }},
+      {"match_phrase": 
+            { "doc": 
+                      {"query" : "Dilated eye exam",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Hemoglobin A1c",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Urine test",
+                      "slop":1}
+            }},
+
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Urine protein",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Stage 4 Chronic Kidney disease",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Diabetic Retinopathy",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Kidney transplant",
+                      "slop":1}
+            }},
+            {"match_phrase": 
+            { "doc": 
+                      {"query" : "Gestational diabetes",
+                      "slop":1}
+            }}
+      ],
+      "minimum_should_match":1
+    }
+    
+  }
+  
+}
+© 2018 GitHub, Inc.

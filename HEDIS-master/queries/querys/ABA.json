@@ -1,0 +1,30 @@
+{   
+  
+  "_source": {
+        "includes": [ "filename" ]
+    },
+  "query": { 
+    "bool": { 
+      "should": [
+        {"match": {"doc":{
+               "query": "BMI"
+             }}},
+		{"match": {"doc":{
+               "query": "kg/m2"
+             }}},
+        {"match_phrase": {"doc":{
+               "query": "Body Mass Index", "slop":1
+             }}}
+
+                      ],
+		"minimum_should_match":1
+			}
+         },
+    "highlight":{
+      "fields":{
+        "doc":{"number_of_fragments" : 10}
+      }
+    }
+  
+}
+
