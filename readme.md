@@ -1,8 +1,4 @@
-Absolutely! Here's a refined, PhD-level `README.md` tailored for your `WaveHedis` repository—perfectly positioned for your GitHub project. This version highlights your project’s intent, technical depth, and practical application in healthcare AI and NLP.
 
----
-
-````markdown
 # WaveHedis: Automated HEDIS Term Extraction Framework
 
 **Intelligent NLP Pipeline for Healthcare Quality Metrics**
