@@ -1,5 +1,5 @@
 
-# WaveHedis: Automated HEDIS Term Extraction Framework
+#  Automated HEDIS Term Extraction Framework
 
 **Intelligent NLP Pipeline for Healthcare Quality Metrics**
 
