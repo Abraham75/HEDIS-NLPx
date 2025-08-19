@@ -1,7 +1,7 @@
 
 #  Automated HEDIS Term Extraction Framework
 
-**Intelligent NLP Pipeline for Healthcare Quality Metrics**
+**HEDIS-NLPx Intelligent NLP Pipeline for Healthcare Quality Metrics**
 
 ---
 
